@@ -4,21 +4,26 @@ import payment.page.core.*;
 import payment.page.PaymentPageFactory;
 
 public class DonationImpl extends DonationComponent {
-    PaymentPage payment;
+
+    protected String name;
+    protected String email;
+    protected String phone;
+    protected double amount;
+    protected String paymentMethod;
 
     public DonationImpl() {
-        System.out.println("\nDonation via Payment Gateway");
-        payment = PaymentPageFactory.createPaymentPage("payment.page.core.PaymentPageImpl");
+        System.out.println("\n[Payment Gateway] Donation Initialized.");
     }
 
-    public void getDonation(){ 
-
-        payment.getTransaction();
+    @Override
+    public void getDonation() {
+        System.out.println("Donor: " + name);
+        System.out.println("Amount: Rp " + amount);
+        System.out.println("Method: " + paymentMethod);
     }
 
-    public void addDonation(){
-
-        payment.addTransaction();
+    @Override
+    public void addDonation() {
+        System.out.println("New donation added.");
     }
-
 }

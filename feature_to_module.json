@@ -18,12 +18,18 @@
 		"aisco.financialreport.expense"
 	],
 	"Donation": [
-		"aisco.donation.core"
-	],
-	"DirectPayment":[
-		"aisco.donation.core"
+		"aisco.donation.pgateway"
 	],
 	"PaymentGateway": [
 		"aisco.donation.pgateway"
+	],
+	"EWallet": [
+		"aisco.donation.ewallet"
+	],
+	"TransferBank": [
+		"aisco.donation.transferbank"
+	],
+	"TransferVA": [
+		"aisco.donation.transferva"
 	]
-}
+	}

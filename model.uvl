@@ -12,9 +12,13 @@ features
 					Income
 				optional
 					Expense
-		optional
 			Donation {abstract true}
-				alternative
+				optional
 					DirectPayment
+				mandatory
 					PaymentGateway
+						alternative
+							EWallet
+							TransferBank
+							TransferVA
 

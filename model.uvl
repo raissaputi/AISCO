@@ -17,7 +17,7 @@ features
 					DirectPayment
 				mandatory
 					PaymentGateway
-						alternative
+						or
 							EWallet
 							TransferBank
 							TransferVA

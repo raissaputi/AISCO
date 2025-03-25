@@ -7,10 +7,10 @@
 	<feature automatic="selected" name="FinancialReport"/>
 	<feature automatic="selected" name="Income"/>
 	<feature name="Expense"/>
-	<feature name="Donation"/>
+	<feature automatic="selected" name="Donation"/>
 	<feature name="DirectPayment"/>
-	<feature name="PaymentGateway"/>
+	<feature automatic="selected" name="PaymentGateway"/>
 	<feature name="EWallet"/>
-	<feature name="TransferBank"/>
+	<feature manual="selected" name="TransferBank"/>
 	<feature name="TransferVA"/>
 </configuration>
